@@ -4,7 +4,7 @@ package org.iproduct.rest.hateoas.jaxrs.polling.model;
  * Models a polling survey with id, title and question
  * 
  * @author Trayan Iliev
- * @author IPT, http://iproduct.org
+ * @author IPT [http://iproduct.org]
  * 
  */
 public class Poll {
@@ -35,49 +35,55 @@ public class Poll {
 	}
 
 	/**
+	 * Get the poll identifier
 	 * @return the poll identifier
 	 */
 	public long getId() {
 		return id;
 	}
 
-	/**
-	 * @param id
-	 *            the poll identifier to set
-	 */
-	public void setId(long id) {
-		this.id = id;
-	}
+//	/**
+//	 * Set the poll identifier
+//	 * @param id
+//	 *            the poll identifier to set
+//	 */
+//	public void setId(long id) {
+//		this.id = id;
+//	}
 
 	/**
+	 * Get the poll title
 	 * @return the poll title
 	 */
 	public String getTitle() {
 		return title;
 	}
 
-	/**
-	 * @param title
-	 *            the poll title to set
-	 */
-	public void setTitle(String title) {
-		this.title = title;
-	}
+//	/**
+//	 * Set the poll title
+//	 * @param title
+//	 *            the poll title to set
+//	 */
+//	public void setTitle(String title) {
+//		this.title = title;
+//	}
 
 	/**
+	 * Get the poll question
 	 * @return the poll question
 	 */
 	public String getQuestion() {
 		return question;
 	}
 
-	/**
-	 * @param question
-	 *            the poll question to set
-	 */
-	public void setQuestion(String question) {
-		this.question = question;
-	}
+//	/**
+//	 * Set the poll question
+//	 * @param question
+//	 *            the poll question to set
+//	 */
+//	public void setQuestion(String question) {
+//		this.question = question;
+//	}
 
 	@Override
 	public int hashCode() {
