@@ -6,7 +6,6 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-import org.iproduct.rest.hateoas.jaxrs.polling.repository.impl.PollRepositoryImpl;
 import org.iproduct.rest.hateoas.jaxrs.polling.resources.HelloREST;
 import org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource;
 
@@ -25,7 +24,6 @@ public class BGJUGDemoApplication extends Application {
 	    // register root resource
 	    classes.add(HelloREST.class);
 	    classes.add(PollsResource.class);
-	    classes.add(PollRepositoryImpl.class);
 	    return classes;
 	}
 }

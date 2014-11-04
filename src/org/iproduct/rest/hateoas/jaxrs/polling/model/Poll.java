@@ -13,8 +13,8 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Poll {
-	long id;
+public class Poll implements Identifiable<Long>{
+	Long id;
 	String title;
 	String question;
 
@@ -34,7 +34,7 @@ public class Poll {
 	 * @param question
 	 *            poll question
 	 */
-	public Poll(long id, String title, String question) {
+	public Poll(Long id, String title, String question) {
 		this.id = id;
 		this.title = title;
 		this.question = question;
@@ -44,7 +44,7 @@ public class Poll {
 	 * Get the poll identifier
 	 * @return the poll identifier
 	 */
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
