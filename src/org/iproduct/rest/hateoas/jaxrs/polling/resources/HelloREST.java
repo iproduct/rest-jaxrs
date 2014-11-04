@@ -3,7 +3,7 @@ package org.iproduct.rest.hateoas.jaxrs.polling.resources;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import static javax.ws.rs.core.MediaType.*;
 
 @Path("/hello")
 public class HelloREST {
@@ -20,24 +20,24 @@ public class HelloREST {
 
 
 	@GET
-	@Produces(value=MediaType.TEXT_PLAIN)
+	@Produces(TEXT_PLAIN)
 	public String sayHelloText() {
 		return MESSAGE_TEXT;
 	}
 	@GET
-	@Produces(MediaType.TEXT_HTML)
+	@Produces(TEXT_HTML)
 	public String sayHelloHtml() {
 		return MESSAGE_HTML;
 	}
 	
 	@GET
-	@Produces(value=MediaType.TEXT_XML)
+	@Produces(TEXT_XML)
 	public String sayHelloXml() {
 		return MESSAGE_XML;
 	}
 
 	@GET
-	@Produces(value=MediaType.APPLICATION_JSON)
+	@Produces(APPLICATION_JSON)
 	public String sayHelloJson() {
 		return MESSAGE_JSON;
 	}

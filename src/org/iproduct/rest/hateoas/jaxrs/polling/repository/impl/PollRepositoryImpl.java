@@ -2,9 +2,16 @@ package org.iproduct.rest.hateoas.jaxrs.polling.repository.impl;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import javax.annotation.ManagedBean;
+import javax.inject.Singleton;
+
+import jersey.repackaged.com.google.common.collect.ImmutableList;
+
+import org.iproduct.rest.hateoas.jaxrs.polling.cdi.Repository;
 import org.iproduct.rest.hateoas.jaxrs.polling.model.Poll;
 import org.iproduct.rest.hateoas.jaxrs.polling.repository.PollRepository;
 
@@ -19,7 +26,16 @@ import org.iproduct.rest.hateoas.jaxrs.polling.repository.PollRepository;
  */
 public class PollRepositoryImpl implements PollRepository{
 	private static long sequence = 0; 
+	private static PollRepositoryImpl repositoryInstance = new PollRepositoryImpl();
 	private Map<Long, Poll> store = new ConcurrentHashMap<>();
+	
+	public static PollRepository getInstance() {
+		return repositoryInstance;
+	}
+	
+	public PollRepositoryImpl(){
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>> Bean Constructed>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+	}
 	
 	/**
 	 * Get a poll by its identifier or null if such poll does not exist

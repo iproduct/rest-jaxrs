@@ -1,7 +1,6 @@
 package org.iproduct.rest.hateoas.jaxrs.polling.repository;
 
 import java.util.Collection;
-import java.util.List;
 
 import org.iproduct.rest.hateoas.jaxrs.polling.model.Poll;
 

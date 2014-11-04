@@ -1,5 +1,9 @@
 package org.iproduct.rest.hateoas.jaxrs.polling.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Models a polling survey with id, title and question
  * 
@@ -7,6 +11,8 @@ package org.iproduct.rest.hateoas.jaxrs.polling.model;
  * @author IPT [http://iproduct.org]
  * 
  */
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Poll {
 	long id;
 	String title;
