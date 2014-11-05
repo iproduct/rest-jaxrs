@@ -14,6 +14,13 @@ import org.glassfish.jersey.client.ClientConfig;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+/**
+ * Functional tests for {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.HelloREST HelloREST} resources
+ * 
+ * @author Trayan Iliev
+ * @author IPT [http://iproduct.org]
+ * 
+ */
 public class HelloRESTTest {
 	public static final String BASE_URI_STRING = "http://localhost:8080/rest-jaxrs/resources";
 	private static WebTarget baseTarget;

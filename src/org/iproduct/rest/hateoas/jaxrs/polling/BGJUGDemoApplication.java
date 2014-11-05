@@ -21,7 +21,7 @@ public class BGJUGDemoApplication extends Application {
 	@Override
 	public Set<Class<?>> getClasses() {
 	    final Set<Class<?>> classes = new HashSet<>();
-	    // register root resource
+	    // register root resources
 	    classes.add(HelloREST.class);
 	    classes.add(PollsResource.class);
 	    return classes;

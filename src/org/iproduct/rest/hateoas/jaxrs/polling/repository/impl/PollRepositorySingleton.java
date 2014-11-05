@@ -38,5 +38,6 @@ public class PollRepositorySingleton extends AbstarctRepository<Long, Poll>{
 	protected Poll makeItemWithModifiedId(Long newId, Poll oldItem) {
 		Poll newItem = new Poll(newId, oldItem.getTitle(), oldItem.getQuestion());
 		return newItem;
-	}	
+	}
+
 }
