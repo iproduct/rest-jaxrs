@@ -24,7 +24,7 @@ public class PollRepositorySingleton extends AbstarctRepository<Long, Poll>{
 		return repositoryInstance;
 	}
 	
-	public PollRepositorySingleton() {
+	private PollRepositorySingleton() {
 		System.out.println(">>>>>>>>>>>>>>>>>>>>>>> Poll Repository Constructed>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 	}
 	
