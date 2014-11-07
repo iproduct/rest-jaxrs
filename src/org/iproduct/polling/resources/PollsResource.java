@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.iproduct.rest.hateoas.jaxrs.polling.resources;
+package org.iproduct.polling.resources;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import static javax.ws.rs.core.MediaType.APPLICATION_XML;
@@ -24,13 +24,13 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.iproduct.rest.hateoas.jaxrs.polling.common.EntityDoesNotExistException;
-import org.iproduct.rest.hateoas.jaxrs.polling.model.Poll;
-import org.iproduct.rest.hateoas.jaxrs.polling.repository.Repository;
-import org.iproduct.rest.hateoas.jaxrs.polling.repository.impl.PollRepositorySingleton;
+import org.iproduct.polling.common.EntityDoesNotExistException;
+import org.iproduct.polling.model.Poll;
+import org.iproduct.polling.repository.Repository;
+import org.iproduct.polling.repository.impl.PollRepositorySingleton;
 
 /**
- * Resource class for {@link org.iproduct.rest.hateoas.jaxrs.polling.model.Poll Poll} resources
+ * Resource class for {@link org.iproduct.polling.model.Poll Poll} resources
  * 
  * @author Trayan Iliev
  * @author IPT [http://iproduct.org]

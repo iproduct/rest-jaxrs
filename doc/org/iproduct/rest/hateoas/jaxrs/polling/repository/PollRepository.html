@@ -92,7 +92,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">org.iproduct.rest.hateoas.jaxrs.polling.repository</div>
+<div class="subTitle">org.iproduct.polling.repository</div>
 <h2 title="Interface PollRepository" class="title">Interface PollRepository</h2>
 </div>
 <div class="contentContainer">
@@ -101,12 +101,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/repository/impl/PollRepositoryImpl.html" title="class in org.iproduct.rest.hateoas.jaxrs.polling.repository.impl">PollRepositoryImpl</a></dd>
+<dd><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/repository/impl/PollRepositoryImpl.html" title="class in org.iproduct.polling.repository.impl">PollRepositoryImpl</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">PollRepository</span></pre>
-<div class="block">Defines <a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.rest.hateoas.jaxrs.polling.model"><code>Poll</code></a> repository providing separate command and query operations</div>
+<div class="block">Defines <a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.polling.model"><code>Poll</code></a> repository providing separate command and query operations</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Trayan Iliev, IPT [http://iproduct.org]</dd>
@@ -131,18 +131,18 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/repository/PollRepository.html#addPoll-org.iproduct.rest.hateoas.jaxrs.polling.model.Poll-">addPoll</a></span>(<a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.rest.hateoas.jaxrs.polling.model">Poll</a>&nbsp;poll)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/repository/PollRepository.html#addPoll-org.iproduct.polling.model.Poll-">addPoll</a></span>(<a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.polling.model">Poll</a>&nbsp;poll)</code>
 <div class="block">Add new poll to repository</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.rest.hateoas.jaxrs.polling.model">Poll</a>&gt;</code></td>
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.polling.model">Poll</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/repository/PollRepository.html#getAllPolls--">getAllPolls</a></span>()</code>
 <div class="block">Get all polls</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.rest.hateoas.jaxrs.polling.model">Poll</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.polling.model">Poll</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/repository/PollRepository.html#getPollById-java.lang.Long-">getPollById</a></span>(java.lang.Long&nbsp;id)</code>
 <div class="block">Get a poll by its identifier or null if such poll does not exist</div>
 </td>
@@ -168,7 +168,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getPollById</h4>
-<pre><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.rest.hateoas.jaxrs.polling.model">Poll</a>&nbsp;getPollById(java.lang.Long&nbsp;id)</pre>
+<pre><a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.polling.model">Poll</a>&nbsp;getPollById(java.lang.Long&nbsp;id)</pre>
 <div class="block">Get a poll by its identifier or null if such poll does not exist</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -184,7 +184,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getAllPolls</h4>
-<pre>java.util.List&lt;<a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.rest.hateoas.jaxrs.polling.model">Poll</a>&gt;&nbsp;getAllPolls()</pre>
+<pre>java.util.List&lt;<a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.polling.model">Poll</a>&gt;&nbsp;getAllPolls()</pre>
 <div class="block">Get all polls</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -192,13 +192,13 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="addPoll-org.iproduct.rest.hateoas.jaxrs.polling.model.Poll-">
+<a name="addPoll-org.iproduct.polling.model.Poll-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>addPoll</h4>
-<pre>void&nbsp;addPoll(<a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.rest.hateoas.jaxrs.polling.model">Poll</a>&nbsp;poll)</pre>
+<pre>void&nbsp;addPoll(<a href="../../../../../../../org/iproduct/rest/hateoas/jaxrs/polling/model/Poll.html" title="class in org.iproduct.polling.model">Poll</a>&nbsp;poll)</pre>
 <div class="block">Add new poll to repository</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

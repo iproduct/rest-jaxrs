@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.iproduct.rest.hateoas.jaxrs.polling.resources;
+package org.iproduct.polling.resources;
 
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import static javax.ws.rs.core.MediaType.APPLICATION_XML;
@@ -25,12 +25,12 @@ import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 
-import org.iproduct.rest.hateoas.jaxrs.polling.model.Poll;
+import org.iproduct.polling.model.Poll;
 import org.junit.After;
 import org.junit.Test;
 
 /**
- * Functional tests for {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource PollsResource} resources
+ * Functional tests for {@link org.iproduct.polling.resources.PollsResource PollsResource} resources
  * 
  * @author Trayan Iliev, IPT [http://iproduct.org]
  * 
@@ -67,7 +67,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 	}
 
 	/**
-	 * Get all polls by using {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#getAllPolls()} 
+	 * Get all polls by using {@link org.iproduct.polling.resources.PollsResource#getAllPolls()} 
 	 * in JSON format, and check that returned result is not null.
 	 */
 	@Test
@@ -77,7 +77,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 	}
 
 	/**
-	 * Get all polls by using {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#getAllPolls()}
+	 * Get all polls by using {@link org.iproduct.polling.resources.PollsResource#getAllPolls()}
 	 * in XML format, and check that returned result is not null.
 	 */
 	@Test
@@ -143,7 +143,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 
 	/**
 	 * Test adding poll using XML marshaling 
-	 * (method {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#addPoll(org.iproduct.rest.hateoas.jaxrs.polling.model.Poll)}).
+	 * (method {@link org.iproduct.polling.resources.PollsResource#addPoll(org.iproduct.polling.model.Poll)}).
 	 */
 	@Test
 	public void testAddPollXML() {
@@ -157,7 +157,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 
 	/**
 	 * Test adding poll using JSON marshaling 
-	 * (method {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#addPoll(org.iproduct.rest.hateoas.jaxrs.polling.model.Poll)}).
+	 * (method {@link org.iproduct.polling.resources.PollsResource#addPoll(org.iproduct.polling.model.Poll)}).
 	 */
 	@Test
 	public void testAddPollJSON() {
@@ -171,7 +171,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 
 	/**
 	 * Test update poll with existing id scenario implemented by method 
-	 * {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#updatePoll(Long, Poll)}.
+	 * {@link org.iproduct.polling.resources.PollsResource#updatePoll(Long, Poll)}.
 	 */
 	@Test
 	public void testUpdatePollWithExistingId() {
@@ -204,7 +204,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 
 	/**
 	 * Test update poll with existing id scenario implemented by method 
-	 * {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#updatePoll(Long, Poll)}.
+	 * {@link org.iproduct.polling.resources.PollsResource#updatePoll(Long, Poll)}.
 	 */
 	@Test
 	public void testUpdatePollWithNonexistingId() {
@@ -222,7 +222,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 
 	/**
 	 * Test polls count is returned correctly implemented by method 
-	 * {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#getPollsCount()}.
+	 * {@link org.iproduct.polling.resources.PollsResource#getPollsCount()}.
 	 */
 	@Test
 	public void testGetPollsCount() {
@@ -240,7 +240,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 
 	/**
 	 * Test delete poll by existing id scenario implemented by method 
-	 * {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#deletePoll(Long)}.
+	 * {@link org.iproduct.polling.resources.PollsResource#deletePoll(Long)}.
 	 */
 	@Test
 	public void testDeletePollById() {
@@ -270,7 +270,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 	
 	/**
 	 * Test delete poll by non-existing id scenario implemented by method 
-	 * {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#deletePoll(Long)}.
+	 * {@link org.iproduct.polling.resources.PollsResource#deletePoll(Long)}.
 	 */
 	@Test
 	public void testDeletePollByNonExisitngId() {
@@ -286,7 +286,7 @@ public class PollsResourceTest extends BGJUGDemoBaseTest{
 	}
 	
 	/**
-	 * Test adding multiple polls and getting them all using {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResource#getAllPolls()}
+	 * Test adding multiple polls and getting them all using {@link org.iproduct.polling.resources.PollsResource#getAllPolls()}
 	 * complex scenario.
 	 */
 	@Test

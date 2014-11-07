@@ -1,5 +1,5 @@
-org.iproduct.rest.hateoas.jaxrs.polling
-org.iproduct.rest.hateoas.jaxrs.polling.model
-org.iproduct.rest.hateoas.jaxrs.polling.repository
-org.iproduct.rest.hateoas.jaxrs.polling.repository.impl
-org.iproduct.rest.hateoas.jaxrs.polling.resources
+org.iproduct.polling
+org.iproduct.polling.model
+org.iproduct.polling.repository
+org.iproduct.polling.repository.impl
+org.iproduct.polling.resources

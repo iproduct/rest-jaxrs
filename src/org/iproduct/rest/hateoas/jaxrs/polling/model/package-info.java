@@ -1,1 +1,0 @@
-package org.iproduct.rest.hateoas.jaxrs.polling.model;

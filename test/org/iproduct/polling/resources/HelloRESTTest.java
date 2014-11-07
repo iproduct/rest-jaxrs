@@ -1,4 +1,4 @@
-package org.iproduct.rest.hateoas.jaxrs.polling.resources;
+package org.iproduct.polling.resources;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,11 +11,12 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriBuilder;
 
 import org.glassfish.jersey.client.ClientConfig;
+import org.iproduct.polling.resources.HelloREST;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * Functional tests for {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.HelloREST HelloREST} resources
+ * Functional tests for {@link org.iproduct.polling.resources.HelloREST HelloREST} resources
  * 
  * @author Trayan Iliev
  * @author IPT [http://iproduct.org]

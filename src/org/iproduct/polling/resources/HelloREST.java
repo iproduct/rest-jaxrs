@@ -1,4 +1,4 @@
-package org.iproduct.rest.hateoas.jaxrs.polling.resources;
+package org.iproduct.polling.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

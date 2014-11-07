@@ -1,4 +1,4 @@
-package org.iproduct.rest.hateoas.jaxrs.polling.resources;
+package org.iproduct.polling.resources;
 
 import java.net.URI;
 
@@ -7,7 +7,7 @@ import javax.ws.rs.core.UriBuilder;
 
 import org.glassfish.jersey.test.JerseyTest;
 import org.glassfish.jersey.test.TestProperties;
-import org.iproduct.rest.hateoas.jaxrs.polling.BGJUGDemoApplication;
+import org.iproduct.polling.BGJUGDemoApplication;
 
 /**
  * Base test extending JerseyTest class that should be extended by other 
@@ -31,7 +31,7 @@ public class BGJUGDemoBaseTest extends JerseyTest {
 
 	/**
 	 * Sets the base Uri for all resource to be accessed using 
-	 * {@link org.iproduct.rest.hateoas.jaxrs.polling.resources.PollsResourceTest#target()} method.
+	 * {@link org.iproduct.polling.resources.PollsResourceTest#target()} method.
 	 * 
 	 * @return the base URI for all resources to be tested
 	 */
